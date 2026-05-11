@@ -12,3 +12,12 @@
 .animate-scroll {
   animation: scroll 40s linear infinite;
 }
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
