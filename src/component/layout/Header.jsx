@@ -15,6 +15,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Gallery', href: '/gallery' },
+    {name:'About', href:'/about'},
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -75,13 +76,13 @@ export default function Header() {
           </div>
 
           {/* Profile Icon Link */}
-          <Link 
+          {/* <Link 
             to="/admin/login"
             className="p-2.5 rounded-xl bg-red-950/30 border border-red-900/50 text-slate-300 hover:text-red-500 hover:border-red-600/50 transition-all duration-300 shadow-lg group"
             title="Admin Login"
           >
             <User size={20} className="group-hover:scale-110 transition-transform" />
-          </Link>
+          </Link> */}
 
           <button
             className="lg:hidden p-2 text-slate-200 hover:text-red-500 transition-colors bg-red-950/30 rounded-lg border border-red-900/50"
@@ -133,7 +134,7 @@ export default function Header() {
                     className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-950/40 border border-red-900/50 text-slate-300 text-[10px] font-bold uppercase tracking-widest"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    <User size={14} />
+                    {/* <User size={14} /> */}
                     Login
                   </Link>
                 </div>

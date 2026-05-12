@@ -9,15 +9,14 @@
   }
 }
 
-.animate-scroll {
-  animation: scroll 40s linear infinite;
-}
-/* Hide scrollbar */
+
+/* Hide Scrollbar */
+/* Hide Scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
 .scrollbar-hide {
-  scrollbar-width: none;
   -ms-overflow-style: none;
+  scrollbar-width: none;
 }
