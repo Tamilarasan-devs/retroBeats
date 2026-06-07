@@ -1,0 +1,718 @@
+==================================================================================
+                    RETRO BEATS - ALL PAGE CONTENT LISTING
+                          Complete Reference Document
+==================================================================================
+
+Current Date: 13 May 2026
+
+
+==================================================================================
+PAGE 1: HOME
+==================================================================================
+File: Home.jsx
+Purpose: Main landing page that showcases all components
+
+Key Sections:
+- Hero Section
+- Artists Showcase
+- Next Event Information
+- Who We Are Section
+- Our Services Overview
+- Our Events Display
+- Why Choose Us Reasons
+- Gallery Images
+
+Design Tokens Used:
+- CRIMSON_GRADIENT_TEXT: linear-gradient(135deg, #dc2626, #ef4444, #991b1b)
+- CRIMSON_GRADIENT_BG: linear-gradient(135deg, #4a0505 0%, #dc2626 50%, #991b1b 100%)
+- CRIMSON_GRADIENT_H: linear-gradient(90deg, #dc2626, #ef4444, transparent)
+- CRIMSON_DIM: rgba(220,38,38,0.10)
+- CRIMSON_BORDER: rgba(220,38,38,0.20)
+- DEEP_OXBLOOD: #1a0505
+- CRIMSON_DARK: #240202
+
+Reusable Components:
+1. GoldBtn - Custom button component with crimson gradient
+2. SectionTitle - Reusable title component with gradient text
+3. FloatingNotes - Animated floating music notes (♩, ♪, ♫, ♬, 𝄞)
+4. WaveBars - Audio visualization wave bars animation
+
+Animation Keyframes:
+- floatNote: Floating upward animation for music notes
+- waveBar: Oscillating height animation
+- fadeUp: Fade and translate animation
+- pulseGlow: Pulsing glow effect
+
+
+==================================================================================
+PAGE 2: ABOUT
+==================================================================================
+File: About.jsx
+Title: "A Symphony of Light & Sound"
+Main Heading: "A Symphony of Light & Sound"
+
+Content:
+- Label: "Our Musical Legacy"
+- Organization Name: "Retro Beats Orchestra"
+- Description: "We specialize in bringing the timeless elegance of orchestral music to a contemporary audience, beautifully harmonizing classical instrumentation with accessible, popular melodies."
+- Additional Info: "From the golden age of light music—featuring lively waltzes and show tunes—to sweeping cinematic scores and modern jazz-infused arrangements, our ensemble creates an atmosphere of pure enchantment for any occasion."
+
+Statistics:
+- 50+ Musicians
+- 10k+ Performances
+- Est. 1998 (Since)
+
+Featured Quote:
+"Music gives a soul to the universe and wings to the mind." — Plato
+
+Background Image:
+- Orchestra Performance (Unsplash: https://images.unsplash.com/photo-1465847899084-d164df4dedc6)
+
+Design Elements:
+- Background Decorative Element: red-900/10 blur-[130px] rounded-full
+- Smooth animations with Framer Motion
+- Motion effects: opacity, x-position, scale transformations
+
+
+==================================================================================
+PAGE 3: GALLERY
+==================================================================================
+File: Gallery.jsx
+Title: "Indian Classical Gallery"
+Subtitle: "Portfolio"
+
+Content:
+Heading: "Indian Classical Gallery"
+Gradient Text: "Classical"
+Description: "Experience timeless Indian instruments — tabla, veena, sitar, mridangam and more."
+
+Image Gallery (6 images from Pexels):
+1. https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg (tabla style)
+2. https://images.pexels.com/photos/210854/pexels-photo-210854.jpeg (classical instrument)
+3. https://images.pexels.com/photos/164743/pexels-photo-164743.jpeg (strings)
+4. https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg (flute vibe)
+5. https://images.pexels.com/photos/462510/pexels-photo-462510.jpeg (performance)
+6. https://images.pexels.com/photos/290660/pexels-photo-290660.jpeg (concert)
+
+Gallery Features:
+- Responsive columns layout (1 column mobile, 2 sm, 3 lg)
+- Hover effects with scale transformation
+- Gradient overlay on hover
+- Lazy loading enabled
+- Border styling: border-red-900/10
+
+
+==================================================================================
+PAGE 4: SERVICES
+==================================================================================
+File: Services.jsx
+Title: "Services"
+
+Featured Services:
+1. Title: "Symphony of Light"
+   Description: "Experience the magic of our signature 'Light Orchestra' performances. We provide lush, tuneful background arrangements and engaging center-stage concerts."
+   Icon: Music (Lucide)
+   Tag: "ORCHESTRAL"
+
+2. Title: "Bespoke Arrangements"
+   Description: "Our talented arrangers transform popular songs, classical ballads, or cinematic scores into magnificent orchestrated pieces tailored to your vision."
+   Icon: Star (Lucide)
+   Tag: "CUSTOM SCORES"
+
+3. Title: "Vocal Accompaniment"
+   Description: "Enhance the orchestral experience with our acclaimed vocalists. From operatic solos to contemporary pop covers, adding a captivating human element."
+   Icon: Mic2 (Lucide)
+   Tag: "VOCALS"
+
+Music Symbols Animation:
+𝄞, 𝄢, ♩, ♪, ♫, ♬, ♭, ♮, ♯, 𝄐, 𝄑, 𝄻, 𝄼, 𝄽, 𝆏, 𝆑, 𝅘𝅥𝅮, 𝅘𝅥𝅯, 𝅘𝅥𝅰, 𝄪
+
+Background Color: #dc2626 (crimson red)
+
+
+==================================================================================
+PAGE 5: CONTACT
+==================================================================================
+File: Contact.jsx
+Title: "Get in Touch"
+Label: "REACH OUT"
+
+Contact Form Fields:
+- First Name (fname) - Required
+- Last Name (lname)
+- Email - Required
+- Phone - Required
+- Purpose (dropdown)
+- Message
+
+Contact Information Displayed:
+- Phone: 9791455877 (WhatsApp enabled)
+- Location: (Available in contact section)
+- Email: (Available in contact section)
+- Business Hours: (Available in contact section)
+
+Features:
+- WhatsApp integration for form submission
+- Form validation for required fields
+- Floating music symbols animation (25 particles)
+- Seeded random positioning for consistent layout
+
+Music Symbols Used:
+𝄞, 𝄢, ♩, ♪, ♫, ♬, ♭, ♮, ♯, 𝄐, 𝄑, 𝄻, 𝄼, 𝄽, 𝆏, 𝆑, 𝅘𝅥𝅮, 𝅘𝅥𝅯, 𝅘𝅥𝅰, 𝄪
+
+Background Overlay:
+- Color: #0a0a0a with 96% opacity
+- Gradient overlay for depth effect
+- Background Image: mus.jpg
+
+
+==================================================================================
+PAGE 6: HERO
+==================================================================================
+File: Hero.jsx
+Purpose: Rotating hero banner section
+
+Features:
+- Carousel of 4 background images
+- Auto-rotation every 5 seconds
+- Full-screen display
+
+Background Images:
+1. bg1: inst2.png (sitar)
+2. https://t4.ftcdn.net/jpg/19/59/64/27/360_F_1959642787_CCcVSuLuAyF3t5wdFJ179lvdf73zj2HF.jpg (stage orchestra)
+3. https://t4.ftcdn.net/jpg/12/03/32/57/360_F_1203325778_h1OjUaRAnm64RaeD8UCi1QA3kfoTqgRQ.jpg (violin performance)
+4. https://t4.ftcdn.net/jpg/15/99/30/71/360_F_1599307144_WUnqDCDwyh4CcJwBEbt9mIuHUP9Uqv5O.jpg (flute)
+
+Rotation Speed: 5000ms (5 seconds)
+
+
+==================================================================================
+PAGE 7: ARTIST (Master Artistry)
+==================================================================================
+File: Artist.jsx
+Title: "Master Artistry behind the scenes"
+Label: "The Musicians"
+Quote: "The true beauty of music is that it connects people. It carries a message, and we, the musicians, are the messengers." — Roy Ayers
+
+Directors:
+1. Name: Sreekumar
+   Role: Programme Director
+   Designation: Founder
+   Image: dr1.jpeg
+
+2. Name: Gopal Sarma
+   Role: Orchestra Director
+   Image: dr2.jpeg
+
+Artists (Singers):
+1. Artist One - Singer (sr1.jpeg)
+2. Artist Two - Singer (sr2.jpeg)
+3. Artist Three - Singer (sr3.jpeg)
+4. Artist Four - Singer (sr4.jpeg)
+5. Artist Six - Singer (sr6.jpeg)
+6. Artist Seven - Singer (sr7.jpeg)
+7. Artist Eight - Singer (sr8.jpeg)
+
+Features:
+- Marquee scroll animation for seamless loop
+- Director section display with larger images (40x40 md)
+- Artist carousel with hover scaling effect
+- Border styling: border-red-900/10
+
+
+==================================================================================
+PAGE 8: OUR EVENTS
+==================================================================================
+File: OurEvents.jsx
+Title: "Our Events & Shows"
+
+Event 1: "Devārāgam"
+- Number: 01
+- Subtitle: Cine Devotional Experience
+- Tag: Spiritual Orchestra
+- Image: https://images.unsplash.com/photo-1516280440614-37939bbacd81
+- Accent Color: #dc2626
+- Description: "An immersive orchestral journey inspired by cinematic devotional melodies — layered with cinematic strings, rhythmic percussion, and emotionally charged vocal harmonies that echo through the soul."
+- Features: Live Orchestra, Cine Percussion, Vocal Ensemble, Spiritual Melodies
+
+Event 2: "Retro Beats"
+- Number: 02
+- Subtitle: Vintage Musical Night
+- Tag: Retro Live Concert
+- Image: https://images.unsplash.com/photo-1501386761578-eac5c94b800a
+- Accent Color: #e11d48
+- Description: "A nostalgic celebration of legendary Tamil melodies, retro synth textures, and timeless cinematic orchestration — crafted to electrify live stages and awaken collective memory."
+- Features: Retro Synths, Tamil Classics, Neon Staging, Cinematic Mix
+
+Event 3: "Golden Classics"
+- Number: 03
+- Subtitle: Luxury Orchestra Production
+- Tag: Grand Stage Experience
+- Image: https://images.unsplash.com/photo-1503095396549-807759245b35
+- Accent Color: #b91c1c
+- Description: "An elite orchestral showcase featuring cinematic lighting, live symphonic arrangements, cinematic strings, and luxury concert production that redefines the grand stage."
+- Features: Symphonic Live, Luxury Staging, Cinematic Strings, Premium Sound
+
+Animation Elements:
+- Floating symbols (icons and musical notes)
+- Glow orbs with gradient backgrounds
+- Multiple decorative blur effects
+
+
+==================================================================================
+PAGE 9: OUR SERVICES
+==================================================================================
+File: OurServices.jsx
+Title: "Our Comprehensive Services"
+
+Service 1: Tamil Light Music Orchestra
+- Icon: Music2
+- Description: "High-energy live orchestra performances featuring timeless Tamil melodies, Ilaiyaraaja classics, A.R. Rahman hits, melody medleys, and modern stage entertainment for grand audiences."
+- Image: https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b
+- Gradient: from-red-600 via-red-500 to-rose-500
+
+Service 2: Cine Instrumental Melodies
+- Icon: Drum
+- Description: "Immersive instrumental experiences featuring flute, violin, and symphonic arrangements of timeless Tamil film hits and cinematic masterpieces."
+- Image: https://t4.ftcdn.net/jpg/13/45/68/81/360_F_1345688111_Rm653ETF3zQzfsMpsTx8qfv55N4YwMCU.jpg
+- Gradient: from-rose-600 via-red-500 to-red-400
+
+Service 3: Wedding Orchestra Shows
+- Icon: Mic2
+- Description: "Luxury live orchestra entertainment for weddings and receptions with romantic melodies, cinematic performances, devotional music, and vibrant celebration energy."
+- Image: https://kiralartists.com/wp-content/uploads/2025/02/wedding_string_orchestra_stage_design-1-1024x538.jpg
+- Gradient: from-red-500 via-rose-400 to-red-600
+
+Service 4: Temple & Cultural Events
+- Icon: Sparkles
+- Description: "Grand orchestral music for temple festivals and cultural programs featuring Cine Devotional hits, spiritual melodies, and vibrant light music arrangements."
+- Image: https://media.gettyimages.com/id/693046396/photo/mumbai-india-classical-music-kishori-amonkar-performs-at-ncpa.jpg
+- Gradient: from-red-700 via-red-600 to-rose-600
+
+Service 5: Live Stage & Sound Setup
+- Icon: Radio
+- Description: "Professional concert stage production including premium sound systems, LED walls, live audio mixing, dynamic lighting, and immersive orchestra stage experiences."
+- Image: https://images.unsplash.com/photo-1492684223066-81342ee5ff30
+- Gradient: from-rose-500 via-red-500 to-red-700
+
+Service 6: Celebrity Tribute Concerts
+- Icon: Guitar
+- Description: "Emotionally powerful tribute concerts dedicated to legendary Indian music composers and singers with live orchestration, vocals, and cinematic stage atmosphere."
+- Image: https://images.unsplash.com/photo-1501386761578-eac5c94b800a
+- Gradient: from-red-600 via-rose-500 to-red-500
+
+Background Elements:
+- Multiple glow orbs with varying opacity
+- Top-left: w-[500px] h-[500px] bg-red-900/10
+- Bottom-right: w-[500px] h-[500px] bg-rose-900/10
+- Center: w-[400px] h-[400px] bg-red-950/10
+
+
+==================================================================================
+PAGE 10: WHY CHOOSE US
+==================================================================================
+File: WhyChooseUs.jsx
+Title: "Why Choose Us"
+
+Reason 1: Luxury Stage Experience
+- Icon: Crown
+- Description: "Every performance is crafted with premium stage aesthetics, cinematic lighting, immersive atmosphere, and elite orchestra presentation."
+- Gradient: from-red-600 to-rose-400
+
+Reason 2: Live Professional Orchestra
+- Icon: Music2
+- Description: "Highly skilled musicians, vocalists, and instrumental artists delivering emotionally rich live performances with precision and passion."
+- Gradient: from-rose-600 to-red-500
+
+Reason 3: Unique Musical Arrangements
+- Icon: Disc3
+- Description: "Original orchestral arrangements blending Indian classical soul with cinematic modern production for unforgettable experiences."
+- Gradient: from-red-700 to-rose-500
+
+Reason 4: Immersive Audio Experience
+- Icon: AudioWaveform
+- Description: "High-quality live sound engineering designed to make every instrument and vocal feel alive, deep, and emotionally powerful."
+- Gradient: from-rose-600 to-red-400
+
+Reason 5: Audience-Centered Performances
+- Icon: Users2
+- Description: "We create emotional audience journeys — not just concerts. Every show is designed to engage, connect, and leave lasting memories."
+- Gradient: from-red-600 to-rose-600
+
+Reason 6: Creative Musical Vision
+- Icon: Sparkles
+- Description: "From retro hits to grand orchestral productions, every concept is developed with artistic storytelling and premium visual direction."
+- Gradient: from-red-500 to-rose-400
+
+Floating Elements:
+- Animated music symbols (♪, ♫, ♬, ♩, ♭, ♯)
+- Mobile responsive (fewer elements on mobile)
+- Background glow orbs
+
+
+==================================================================================
+PAGE 11: WHO WE ARE (WhoWeAre.jsx)
+==================================================================================
+Title: "Who We Are"
+Statistics Bar Count: 36 bars
+
+Stats:
+- 100+ Performances
+- 15+ Artists
+- 10+ Years
+
+Features:
+- Animated music visualizer bars
+- Floating music symbols background
+- Seeded random positioning
+- Background image: mus.jpg
+
+
+==================================================================================
+PAGE 12: NEXT EVENT
+==================================================================================
+File: NextEvent.jsx
+Title: "Next Event Details"
+
+Features:
+- Event details display
+- Calendar, location, time icons
+- Ticket information
+- Background decorative elements (red-900/10 and rose-900/10 glows)
+- Texture overlay with SVG pattern
+
+Icon Types Used:
+- Calendar
+- MapPin
+- Clock
+- Ticket
+- Star
+
+
+==================================================================================
+PAGE 13: HERO SECTION (Alternative)
+==================================================================================
+File: HeroSection.jsx
+Purpose: Alternative carousel hero section
+
+Slides:
+1. Title: "Live Performances"
+   Subtitle: "Experience music like never before"
+   Color: #c9a84c
+
+2. Title: "Cultural Evenings"
+   Subtitle: "A journey through timeless melodies"
+   Color: #f1f5f9
+
+3. Title: "Special Tributes"
+   Subtitle: "Celebrating the legends"
+   Color: #faf9f6
+
+4. Title: "Music & Memories"
+   Subtitle: "Unforgettable moments created together"
+   Color: #1c1917
+
+5. Title: "Feel the Rhythm"
+   Subtitle: "The heart of music beats here"
+   Color: #0f172a
+
+
+==================================================================================
+PAGE 14: ADMIN LOGIN
+==================================================================================
+File: AdminLogin.jsx
+Title: "Admin Portal"
+Purpose: Authentication page for admin access
+
+Form Fields:
+- Username (Input field)
+- Password (Input field)
+- Submit button (Login)
+
+Default Credentials (Demo):
+- Username: admin
+- Password: retrobest123
+
+Features:
+- Form validation
+- Error message display
+- Navigation to /admin/dashboard on success
+- LocalStorage for session management (adminLoggedIn)
+
+Design:
+- Icon: Lock (Lucide) - red-600 color
+- Lock icon in rounded box with red-600/10 background
+- Dark theme (bg-[#0a0a0a])
+- Max-width: md (28rem)
+
+
+==================================================================================
+PAGE 15: ADMIN DASHBOARD
+==================================================================================
+File: AdminDashboard.jsx
+Purpose: Admin panel for image management
+
+Cloudinary Integration:
+- Environment Variables Used:
+  * VITE_CLOUDINARY_CLOUD_NAME
+  * VITE_CLOUDINARY_UPLOAD_PRESET
+  * VITE_CLOUDINARY_API_KEY
+  * VITE_CLOUDINARY_API_SECRET
+
+Features:
+- Image upload functionality
+- Image deletion capability
+- Preview display
+- Loading states
+- Message system (success/error)
+- Auth check (redirects if not logged in)
+- Local state management for images
+
+Icons Used:
+- Trash2, Loader2, Upload, Image, LogOut, Plus, X, AlertCircle, CheckCircle2
+
+Functionality:
+- List all images
+- Upload new images
+- Delete images by ID
+- Display upload status
+
+
+==================================================================================
+PAGE 16: IMAGE UPLOAD
+==================================================================================
+File: ImageUpload.jsx
+Purpose: Standalone image upload interface
+
+Features:
+- Drag-and-drop functionality
+- File input selection
+- Image preview
+- File validation (type and size)
+- Cloudinary integration
+- Upload status display
+- Delete option for uploaded images
+
+Validation Rules:
+- File type: Image only
+- Max file size: 10MB
+
+Cloudinary Configuration:
+- Same environment variables as AdminDashboard
+
+Icons Used:
+- Trash2, Loader2, ExternalLink
+
+Message Types:
+- error (red styling)
+- success (green styling)
+
+
+==================================================================================
+PAGE 17: GALLERY IMAGES
+==================================================================================
+File: GalleryImages.jsx
+Purpose: Display gallery images from local attachments
+
+Local Images (Fallback):
+1. /assets/attachments/1.jpg
+2. /assets/attachments/2.jpg
+3. /assets/attachments/3.jpg
+4. /assets/attachments/4.jpg
+5. /assets/attachments/5.jpg
+6. /assets/attachments/6.jpg
+7. /assets/attachments/7.jpg
+8. /assets/attachments/8.jpg
+9. /assets/attachments/9.jpg
+
+Features:
+- Lazy loading from Cloudinary or local fallback
+- Scroll reference for navigation
+- Loading state management
+- Responsive grid layout
+
+
+==================================================================================
+PAGE 18: SILVER SCREEN OPENING
+==================================================================================
+File: SilverScreenOpening.jsx
+Purpose: Splash screen animation on app load
+
+Features:
+- Music bars animation on opening
+- Animated transition
+- 900ms animation duration
+
+Music Bar Configuration:
+- Delays: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
+- Heights: [15, 35, 55, 30, 50, 20, 45]
+
+Animation:
+- Black background
+- Centered content with animation
+- Callback function (onNext) for navigation
+
+
+==================================================================================
+PAGE 19: RETRO BEAT (Countdown)
+==================================================================================
+File: RetroBeat.jsx
+Title: "Retro Beat Countdown"
+Purpose: Event countdown timer
+
+Event Date: May 9, 2026 at 17:00:00 (5:00 PM)
+
+Countdown Display:
+- Days (00 format)
+- Hours (00 format)
+- Minutes (00 format)
+- Seconds (00 format)
+
+Update Frequency: Every 1 second
+Real-time calculation from current date
+
+
+==================================================================================
+PAGE 20: COMING SOON
+==================================================================================
+File: CommingSoon.jsx
+Title: "Coming Soon"
+Purpose: Display upcoming events
+
+Events Array:
+1. Image: event.jpeg
+2. Image: event1.jpeg
+
+Features:
+- Image modal/preview
+- Event image selection
+- Logo: logo.jpeg
+
+
+==================================================================================
+SHARED COMPONENTS
+==================================================================================
+
+File: RetroBeats.jsx
+- Shared component (content not fully detailed)
+
+File: SplashScreen.jsx
+- Shared component for initial load
+
+File: WhatsAppButton.jsx
+- Shared component for WhatsApp contact integration
+
+
+==================================================================================
+LAYOUT COMPONENTS
+==================================================================================
+
+File: Header.jsx
+- Navigation header component
+- Top navigation menu
+
+File: Footer.jsx
+- Footer component
+- Bottom page footer with links/info
+
+
+==================================================================================
+ROUTES
+==================================================================================
+
+File: AppRoutes.jsx
+- Route definitions for all pages
+- Navigation configuration
+
+
+==================================================================================
+DESIGN SYSTEM SUMMARY
+==================================================================================
+
+Color Palette:
+- Primary Red: #dc2626
+- Secondary Red: #ef4444
+- Dark Red: #991b1b
+- Crimson: #240202
+- Deep Oxblood: #1a0505
+- Rose: #f43f5e
+- Rose Light: #fb7185
+- Rose Background: #fda4af
+- Secondary Crimson: #e11d48
+- Dark Crimson: #be123c
+- Intense Red: #b91c1c
+
+Background Colors:
+- Main: #0a0a0a
+- Secondary: #111
+- Dark: #1a0101
+
+Fonts:
+- Serif: 'Cormorant Garamond'
+- Sans-serif: 'Inter'
+- Alt Sans: 'Outfit'
+
+Common Styling:
+- Rounded corners: Various (2rem, 2.5rem, 3.5rem)
+- Border color: Red-900/10 to Red-500/30
+- Glow/Blur: 120px to 130px blur radius
+- Box shadows: Subtle to prominent with red accents
+- Gradients: Multiple red-rose combinations
+
+
+==================================================================================
+ANIMATION KEYFRAMES
+==================================================================================
+
+1. floatNote - Music notes float upward
+2. floatSym - Symbols float with drift
+3. waveBar - Audio bars oscillate
+4. fadeUp - Fade in with upward movement
+5. pulseGlow - Pulsing glow effect
+6. marquee - Continuous scroll animation
+
+Framer Motion Animations:
+- Fade In / Scale transformations
+- Staggered animations
+- Scroll triggers (whileInView)
+- Hover effects
+
+
+==================================================================================
+ICONS USED (Lucide React)
+==================================================================================
+
+Music/Audio:
+- Music, Music2, Disc3, AudioWaveform, Volume2, Headphones, Radio
+
+Actions/Controls:
+- Play, Pause, ArrowRight, Trash2, Upload, Plus, X, LogOut
+
+UI Elements:
+- Sparkles, Star, Crown, Users2, Mic2, Drum, Guitar
+
+Form/Status:
+- Lock, User, LogIn, AlertCircle, CheckCircle2, ExternalLink, Phone, MapPin, Mail, Clock, Send, Ticket
+
+
+==================================================================================
+EXTERNAL LINKS & RESOURCES
+==================================================================================
+
+Unsplash Images:
+- Orchestra Performance: https://images.unsplash.com/photo-1465847899084-d164df4dedc6
+- Event Images: https://images.unsplash.com/photo-151628...
+
+Pexels Images:
+- Various classical instruments and performances
+
+Getty Images:
+- Mumbai classical music performance
+
+Cloudinary:
+- Cloud-based image management and delivery
+
+
+==================================================================================
+END OF DOCUMENT
+==================================================================================

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import bg1 from '../../assets/img/inst2.png'
+
 export default function Hero() {
 
   // Indian classical / orchestra themed images (royalty-free)
@@ -60,13 +61,14 @@ export default function Hero() {
             textShadow: "0 8px 30px rgba(0,0,0,0.9)",
           }}
         >
-          Best Instrumental Light Music Orchestra in{" "}
-          <span className="text-red-500">Coimbatore</span>
+          A Symphony of Nostalgia, Passion,{" "}
+          <br className="hidden sm:block" />
+          and <span className="text-red-500">Timeless Music</span>
         </h1>
 
         {/* Subheading */}
-        <h2 className="mt-4 text-sm sm:text-lg md:text-xl text-gray-100">
-          There's nothing better than Live Music
+        <h2 className="mt-4 text-sm sm:text-lg md:text-xl text-gray-100 max-w-3xl leading-relaxed">
+          Retro Beats Orchestra brings the magic of soulful live orchestral music to modern audiences through nostalgic, emotionally rich performances
         </h2>
 
         {/* Highlight */}
@@ -82,9 +84,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="mt-5 text-sm sm:text-base md:text-lg text-gray-100 max-w-xl md:max-w-2xl leading-relaxed">
-          Experience the richness of Cine Light Music and Cinematic Orchestration through
-          live performances featuring live strings, keyboards, flute, and rhythmic percussion.
-          Perfect for weddings, corporate events, and grand celebrations.
+          Welcome to Retro Beats Orchestra, Coimbatore's premier live musical ensemble dedicated to preserving and celebrating the timeless melodies of Indian cinema. Reliving the Golden Era of Indian Cinema Through Live Orchestral Excellence.
         </p>
 
         {/* CTA */}

@@ -194,18 +194,32 @@ export default function WhoWeAre() {
                 fontSize: "clamp(22px, 2.5vw, 32px)", fontWeight: 400,
                 lineHeight: 1.45, color: "#ffffff", marginBottom: "1.5rem",
               }}>
-                A passionate ensemble of professional musicians and sound artisans, united by one singular purpose: Orchestral Excellence.
+                Founded by music enthusiast and performer <span style={{ color: "#ef4444", fontWeight: 600 }}>Sreekumar</span> and a few passionate musicians, Retro Beats was born out of a passion to revive the grandeur, soul, and emotional depth of live orchestral music.
               </p>
 
               {/* Body */}
               <p style={{
                 fontFamily: "'Outfit', sans-serif", fontWeight: 400,
                 fontSize: "16px", lineHeight: 1.8,
+                color: "#e2e8f0", marginBottom: "1.25rem",
+              }}>
+                Retro Beats is committed to reviving the <span style={{ color: "#dc2626", fontWeight: 700 }}>timeless charm, grandeur, and emotional depth</span> of live orchestral music for today's audiences. In an era dominated by fast-paced digital sound and short-lived musical trends, we strive to reconnect music lovers with the soulful melodies, rich orchestration, and unforgettable compositions created by the legendary masters of Indian cinema.
+              </p>
+
+              <p style={{
+                fontFamily: "'Outfit', sans-serif", fontWeight: 400,
+                fontSize: "16px", lineHeight: 1.8,
+                color: "#e2e8f0", marginBottom: "1.25rem",
+              }}>
+                At Retro Beats, we believe that timeless music deserves to be experienced in its true spirit — live, vibrant, emotional, and grand. Through our orchestra, we aim to create moments of pure musical enchantment while honouring the legacy of the great composers whose melodies continue to live in the hearts of millions.
+              </p>
+
+              <p style={{
+                fontFamily: "'Outfit', sans-serif", fontWeight: 400,
+                fontSize: "16px", lineHeight: 1.8,
                 color: "#e2e8f0", marginBottom: "2.75rem",
               }}>
-                Founded in Coimbatore, we have graced over{" "}
-                <span style={{ color: "#dc2626", fontWeight: 700 }}>400 stages</span>{" "}
-                across South India — performing for cultural institutions, luxury events, and grand festivals. Every note we play is a tribute to the timeless legacy of Cine Light Music and the cinematic masters who shaped it.
+                Through professionally curated live performances, we pay tribute to the legendary composers, lyricists, and singers whose music continues to inspire generations.
               </p>
             </div>
 
