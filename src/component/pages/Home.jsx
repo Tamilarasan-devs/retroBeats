@@ -15,6 +15,7 @@ import OurServices from "./OurServices";
 import OurEvents from "./OurEvents";
 import WhyChooseUs from "./WhyChooseUs";
 import GalleryImages from "./GalleryImages";
+import Founder from "./Founder";
 // ── Design Tokens ─────────────────────────────────────────────────────────────
 const CRIMSON_GRADIENT_TEXT = {
   background: "linear-gradient(135deg, #dc2626, #ef4444, #991b1b)",
@@ -763,6 +764,7 @@ export default function OrchestraHome() {
         <Artists />
 
         <WhoWeAre />
+        <Founder/>
        <OurServices/>
         <OurEvents/>
         <WhyChooseUs/>
