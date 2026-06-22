@@ -199,24 +199,24 @@ export default function WhoWeAre() {
 
               {/* Body */}
               <p style={{
-                fontFamily: "'Outfit', sans-serif", fontWeight: 400,
-                fontSize: "16px", lineHeight: 1.8,
+               fontWeight: 400,
+                fontSize: "20px", lineHeight: 1.8,
                 color: "#e2e8f0", marginBottom: "1.25rem",
               }}>
                 Retro Beats is committed to reviving the <span style={{ color: "#dc2626", fontWeight: 700 }}>timeless charm, grandeur, and emotional depth</span> of live orchestral music for today's audiences. In an era dominated by fast-paced digital sound and short-lived musical trends, we strive to reconnect music lovers with the soulful melodies, rich orchestration, and unforgettable compositions created by the legendary masters of Indian cinema.
               </p>
 
               <p style={{
-                fontFamily: "'Outfit', sans-serif", fontWeight: 400,
-                fontSize: "16px", lineHeight: 1.8,
+               fontWeight: 400,
+                fontSize: "20px", lineHeight: 1.8,
                 color: "#e2e8f0", marginBottom: "1.25rem",
               }}>
                 At Retro Beats, we believe that timeless music deserves to be experienced in its true spirit — live, vibrant, emotional, and grand. Through our orchestra, we aim to create moments of pure musical enchantment while honouring the legacy of the great composers whose melodies continue to live in the hearts of millions.
               </p>
 
               <p style={{
-                fontFamily: "'Outfit', sans-serif", fontWeight: 400,
-                fontSize: "16px", lineHeight: 1.8,
+               fontWeight: 400,
+                fontSize: "20px", lineHeight: 1.8,
                 color: "#e2e8f0", marginBottom: "2.75rem",
               }}>
                 Through professionally curated live performances, we pay tribute to the legendary composers, lyricists, and singers whose music continues to inspire generations.
@@ -228,7 +228,7 @@ export default function WhoWeAre() {
               <button
                 className="group"
                 style={{
-                  fontFamily: "'Outfit', sans-serif", fontSize: "11px",
+                 fontSize: "16px",
                   letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700,
                   display: "inline-flex", alignItems: "center", gap: "14px",
                   background: "#dc2626", color: "#fff",
@@ -255,252 +255,249 @@ export default function WhoWeAre() {
           <div className={`hidden lg:block self-stretch transition-all duration-700 delay-200 ${visible ? "opacity-100" : "opacity-0"}`}>
             <div style={{ width: "1px", height: "100%", margin: "0 auto", background: "linear-gradient(to bottom, transparent, rgba(220,38,38,0.45), transparent)" }} />
           </div>
-{/* ── RIGHT ── */}
-<div className="lg:pl-20 mt-16 lg:mt-0">
+          {/* ── RIGHT ── */}
+          <div className="lg:pl-20 mt-16 lg:mt-0">
 
-  {/* Dark Red Luxury Card */}
-  <div
-    className={`transition-all duration-700 delay-300 ${
-      visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-    }`}
-  >
-    <div
-      style={{
-        position: "relative",
-        overflow: "hidden",
-
-        /* UPDATED RED THEME */
-        background:
-          "linear-gradient(145deg, #2b0000 0%, #4a0404 45%, #120101 100%)",
-
-        borderRadius: "18px",
-        padding: "44px 36px 36px",
-        border: "1px solid rgba(239,68,68,0.28)",
-        marginBottom: "20px",
-        boxShadow: "0 0 40px rgba(239,68,68,0.12)",
-      }}
-    >
-      {/* Ambient glow */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background:
-            "radial-gradient(circle at top right, rgba(239,68,68,0.14), transparent 45%)",
-          pointerEvents: "none",
-        }}
-      />
-
-      {/* Corner brackets */}
-      {[
-        { t: "16px", l: "16px", bt: true, bl: true },
-        { t: "16px", r: "16px", bt: true, br: true },
-        { b: "16px", l: "16px", bb: true, bl: true },
-        { b: "16px", r: "16px", bb: true, br: true },
-      ].map((c, i) => (
-        <div
-          key={i}
-          style={{
-            position: "absolute",
-            top: c.t,
-            bottom: c.b,
-            left: c.l,
-            right: c.r,
-            width: 20,
-            height: 20,
-            borderTop: c.bt
-              ? "1px solid rgba(239,68,68,0.55)"
-              : "none",
-            borderBottom: c.bb
-              ? "1px solid rgba(239,68,68,0.55)"
-              : "none",
-            borderLeft: c.bl
-              ? "1px solid rgba(239,68,68,0.55)"
-              : "none",
-            borderRight: c.br
-              ? "1px solid rgba(239,68,68,0.55)"
-              : "none",
-          }}
-        />
-      ))}
-
-      {/* Watermark */}
-      <div
-        style={{
-          position: "absolute",
-          right: "12px",
-          top: "0px",
-          fontSize: "130px",
-          color: "#ef4444",
-          opacity: 0.08,
-          lineHeight: 1,
-          fontFamily: "'Cormorant Garamond', serif",
-          userSelect: "none",
-          pointerEvents: "none",
-        }}
-      >
-        𝄞
-      </div>
-
-      {/* Violin */}
-      <div
-        style={{
-          textAlign: "center",
-          fontSize: "56px",
-          marginBottom: "14px",
-          position: "relative",
-          zIndex: 1,
-          filter: "drop-shadow(0 0 12px rgba(239,68,68,0.45))",
-        }}
-      >
-        🎻
-      </div>
-
-      {/* Sub-label */}
-      <p
-        style={{
-          textAlign: "center",
-          fontFamily: "'DM Sans', sans-serif",
-          fontSize: "9px",
-          letterSpacing: "0.55em",
-          textTransform: "uppercase",
-          color: "rgba(255,220,220,0.72)",
-          marginBottom: "22px",
-          position: "relative",
-          zIndex: 1,
-        }}
-      >
-        Live Performance
-      </p>
-
-      {/* Equalizer */}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "flex-end",
-          justifyContent: "center",
-          gap: "2.5px",
-          height: "68px",
-          position: "relative",
-          zIndex: 1,
-        }}
-      >
-        {Array.from({ length: BAR_COUNT }).map((_, i) => {
-          const h = [
-            28, 55, 42, 78, 52, 88, 38, 68, 82, 48, 62, 92,
-            32, 72, 48, 58, 38, 82, 52, 68, 42, 78, 32, 88,
-            58, 48, 72, 38, 62, 82, 42, 68, 52, 78, 58, 92,
-          ][i];
-
-          return (
+            {/* Dark Red Luxury Card */}
             <div
-              key={i}
+              className={`transition-all duration-700 delay-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                }`}
+            >
+              <div
+                style={{
+                  position: "relative",
+                  overflow: "hidden",
+
+                  /* UPDATED RED THEME */
+                  background:
+                    "linear-gradient(145deg, #2b0000 0%, #4a0404 45%, #120101 100%)",
+
+                  borderRadius: "18px",
+                  padding: "44px 36px 36px",
+                  border: "1px solid rgba(239,68,68,0.28)",
+                  marginBottom: "20px",
+                  boxShadow: "0 0 40px rgba(239,68,68,0.12)",
+                }}
+              >
+                {/* Ambient glow */}
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    background:
+                      "radial-gradient(circle at top right, rgba(239,68,68,0.14), transparent 45%)",
+                    pointerEvents: "none",
+                  }}
+                />
+
+                {/* Corner brackets */}
+                {[
+                  { t: "16px", l: "16px", bt: true, bl: true },
+                  { t: "16px", r: "16px", bt: true, br: true },
+                  { b: "16px", l: "16px", bb: true, bl: true },
+                  { b: "16px", r: "16px", bb: true, br: true },
+                ].map((c, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      position: "absolute",
+                      top: c.t,
+                      bottom: c.b,
+                      left: c.l,
+                      right: c.r,
+                      width: 20,
+                      height: 20,
+                      borderTop: c.bt
+                        ? "1px solid rgba(239,68,68,0.55)"
+                        : "none",
+                      borderBottom: c.bb
+                        ? "1px solid rgba(239,68,68,0.55)"
+                        : "none",
+                      borderLeft: c.bl
+                        ? "1px solid rgba(239,68,68,0.55)"
+                        : "none",
+                      borderRight: c.br
+                        ? "1px solid rgba(239,68,68,0.55)"
+                        : "none",
+                    }}
+                  />
+                ))}
+
+                {/* Watermark */}
+                <div
+                  style={{
+                    position: "absolute",
+                    right: "12px",
+                    top: "0px",
+                    fontSize: "130px",
+                    color: "#ef4444",
+                    opacity: 0.08,
+                    lineHeight: 1,
+                    fontFamily: "'Cormorant Garamond', serif",
+                    userSelect: "none",
+                    pointerEvents: "none",
+                  }}
+                >
+                  𝄞
+                </div>
+
+                {/* Violin */}
+                <div
+                  style={{
+                    textAlign: "center",
+                    fontSize: "56px",
+                    marginBottom: "14px",
+                    position: "relative",
+                    zIndex: 1,
+                    filter: "drop-shadow(0 0 12px rgba(239,68,68,0.45))",
+                  }}
+                >
+                  🎻
+                </div>
+
+                {/* Sub-label */}
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontFamily: "'DM Sans', sans-serif",
+                    fontSize: "9px",
+                    letterSpacing: "0.55em",
+                    textTransform: "uppercase",
+                    color: "rgba(255,220,220,0.72)",
+                    marginBottom: "22px",
+                    position: "relative",
+                    zIndex: 1,
+                  }}
+                >
+                  Live Performance
+                </p>
+
+                {/* Equalizer */}
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "flex-end",
+                    justifyContent: "center",
+                    gap: "2.5px",
+                    height: "68px",
+                    position: "relative",
+                    zIndex: 1,
+                  }}
+                >
+                  {Array.from({ length: BAR_COUNT }).map((_, i) => {
+                    const h = [
+                      28, 55, 42, 78, 52, 88, 38, 68, 82, 48, 62, 92,
+                      32, 72, 48, 58, 38, 82, 52, 68, 42, 78, 32, 88,
+                      58, 48, 72, 38, 62, 82, 42, 68, 52, 78, 58, 92,
+                    ][i];
+
+                    return (
+                      <div
+                        key={i}
+                        style={{
+                          width: "3px",
+                          height: `${h}%`,
+                          background:
+                            "linear-gradient(to top, #7f1d1d, #ef4444, #fca5a5)",
+                          borderRadius: "999px",
+                          flexShrink: 0,
+                          boxShadow: "0 0 8px rgba(239,68,68,0.35)",
+                          animation: `waveBar ${1.1 + (i % 6) * 0.12
+                            }s ease-in-out infinite alternate`,
+                          animationDelay: `${i * 0.042}s`,
+                        }}
+                      />
+                    );
+                  })}
+                </div>
+
+                {/* Footer tagline */}
+                <p
+                  style={{
+                    textAlign: "center",
+                    marginTop: "20px",
+                    fontFamily: "'DM Sans', sans-serif",
+                    fontSize: "8.5px",
+                    letterSpacing: "0.5em",
+                    textTransform: "uppercase",
+                    color: "rgba(255,220,220,0.55)",
+                    position: "relative",
+                    zIndex: 1,
+                  }}
+                >
+                  Live · Passionate · Timeless
+                </p>
+              </div>
+            </div>
+
+            {/* Stats block */}
+            <div
+              className={`grid grid-cols-3 transition-all duration-700 delay-[450ms] ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                }`}
               style={{
-                width: "3px",
-                height: `${h}%`,
-                background:
-                  "linear-gradient(to top, #7f1d1d, #ef4444, #fca5a5)",
-                borderRadius: "999px",
-                flexShrink: 0,
-                boxShadow: "0 0 8px rgba(239,68,68,0.35)",
-                animation: `waveBar ${
-                  1.1 + (i % 6) * 0.12
-                }s ease-in-out infinite alternate`,
-                animationDelay: `${i * 0.042}s`,
+                border: "1px solid rgba(239,68,68,0.22)",
+                borderRadius: "10px",
+                overflow: "hidden",
+                boxShadow: "0 0 25px rgba(239,68,68,0.08)",
               }}
-            />
-          );
-        })}
-      </div>
+            >
+              {STATS.map(({ num, label }, i) => (
+                <div
+                  key={label}
+                  style={{
+                    padding: "28px 12px",
+                    textAlign: "center",
 
-      {/* Footer tagline */}
-      <p
-        style={{
-          textAlign: "center",
-          marginTop: "20px",
-          fontFamily: "'DM Sans', sans-serif",
-          fontSize: "8.5px",
-          letterSpacing: "0.5em",
-          textTransform: "uppercase",
-          color: "rgba(255,220,220,0.55)",
-          position: "relative",
-          zIndex: 1,
-        }}
-      >
-        Live · Passionate · Timeless
-      </p>
-    </div>
-  </div>
+                    /* RED MATCHING BG */
+                    background:
+                      "linear-gradient(180deg, #260202 0%, #140101 100%)",
 
-  {/* Stats block */}
-  <div
-    className={`grid grid-cols-3 transition-all duration-700 delay-[450ms] ${
-      visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-    }`}
-    style={{
-      border: "1px solid rgba(239,68,68,0.22)",
-      borderRadius: "10px",
-      overflow: "hidden",
-      boxShadow: "0 0 25px rgba(239,68,68,0.08)",
-    }}
-  >
-    {STATS.map(({ num, label }, i) => (
-      <div
-        key={label}
-        style={{
-          padding: "28px 12px",
-          textAlign: "center",
+                    borderRight:
+                      i < STATS.length - 1
+                        ? "1px solid rgba(239,68,68,0.18)"
+                        : "none",
 
-          /* RED MATCHING BG */
-          background:
-            "linear-gradient(180deg, #260202 0%, #140101 100%)",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background =
+                      "linear-gradient(180deg, #3b0303 0%, #220101 100%)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background =
+                      "linear-gradient(180deg, #260202 0%, #140101 100%)";
+                  }}
+                >
+                  <p
+                    style={{
+                      fontFamily: "'Cormorant Garamond', serif",
+                      fontWeight: 700,
+                      fontSize: "clamp(32px, 4vw, 48px)",
+                      lineHeight: 1,
+                      color: "#fff5f5",
+                      marginBottom: "8px",
+                      textShadow: "0 0 12px rgba(239,68,68,0.22)",
+                    }}
+                  >
+                    {num}
+                  </p>
 
-          borderRight:
-            i < STATS.length - 1
-              ? "1px solid rgba(239,68,68,0.18)"
-              : "none",
-
-          transition: "all 0.3s ease",
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.background =
-            "linear-gradient(180deg, #3b0303 0%, #220101 100%)";
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.background =
-            "linear-gradient(180deg, #260202 0%, #140101 100%)";
-        }}
-      >
-        <p
-          style={{
-            fontFamily: "'Cormorant Garamond', serif",
-            fontWeight: 700,
-            fontSize: "clamp(32px, 4vw, 48px)",
-            lineHeight: 1,
-            color: "#fff5f5",
-            marginBottom: "8px",
-            textShadow: "0 0 12px rgba(239,68,68,0.22)",
-          }}
-        >
-          {num}
-        </p>
-
-        <p
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: "10px",
-            letterSpacing: "0.28em",
-            textTransform: "uppercase",
-            color: "#f87171",
-            fontWeight: 500,
-          }}
-        >
-          {label}
-        </p>
-      </div>
-    ))}
-  </div>
-</div>
+                  <p
+                    style={{
+                      fontFamily: "'DM Sans', sans-serif",
+                      fontSize: "10px",
+                      letterSpacing: "0.28em",
+                      textTransform: "uppercase",
+                      color: "#f87171",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 

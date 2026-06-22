@@ -1,25 +1,25 @@
 import sr1 from "../../assets/img/sr1.jpeg";
 import sr2 from "../../assets/img/sr2.jpeg";
-import sr3 from "../../assets/img/sr3.jpeg";
-import sr4 from "../../assets/img/sr4.jpeg";
+import sr12 from "../../assets/img/sr12.jpeg";
+import sr11 from "../../assets/img/sr11.jpeg";
 import sr6 from "../../assets/img/sr6.jpeg";
-import sr7 from "../../assets/img/sr7.jpeg";
+import sr10 from "../../assets/img/sr10.jpeg";
 import sr8 from "../../assets/img/sr8.jpeg";
+import sr9 from "../../assets/img/sr9.jpeg";
 import dir1 from "../../assets/img/dr1.jpeg";
 import dir2 from "../../assets/img/dr2.jpeg";
 
 export default function Artists() {
   const artists = [
-    { img: sr1, role: "Singer" },
-    { img: sr2, role: "Singer" },
-    { img: sr3, role: "Singer" },
-    { img: sr1, name: "Artist One", role: "Singer" },
-    { img: sr2, name: "Artist Two", role: "Singer" },
-    { img: sr3, name: "Artist Three", role: "Singer" },
-    { img: sr4, name: "Artist Four", role: "Singer" },
-    { img: sr6, name: "Artist Six", role: "Singer" },
-    { img: sr7, name: "Artist Seven", role: "Singer" },
-    { img: sr8, name: "Artist Eight", role: "Singer" },
+    { img: sr2, name: "Aadya prajeesh", role: "Singer" },
+    // { img: sr3, name: "Sreekumar", role: "Singer" },
+    { img: sr1, name: "Mayalakshmi", role: "Singer" },
+    { img: sr9, name: "Vishnu", role: "Singer" },
+    { img: sr12, name: "Jestin", role: "Singer" },
+    { img: sr11, name: "Reji sadanandan", role: "Singer" },
+    { img: sr6, name: "Chithra shobhana", role: "Singer" },
+    { img: sr10, name: "Rema narayanankutty", role: "Singer" },
+    { img: sr8, name: "Sreedevi  thiruvizha", role: "Singer" },
 
   ];
 

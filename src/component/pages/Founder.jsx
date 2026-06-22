@@ -65,7 +65,7 @@ export default function Founder() {
 
             {/* Right Side */}
             <div className="lg:col-span-8">
-              <div className="space-y-8 text-zinc-300 leading-9 text-lg">
+              <div className="space-y-8 text-zinc-300 leading-9" style={{fontFamily: '"Cormorant Garamond", serif',fontSize:'20px'}}>
                 <p>
                   Sreekumar is the Founder Director of Retro Beats Orchestra and
                   the driving force behind its vision of reviving the timeless
@@ -130,7 +130,7 @@ export default function Founder() {
           <div className="grid lg:grid-cols-12 gap-16">
             {/* Content */}
             <div className="lg:col-span-8 order-2 lg:order-1">
-              <div className="space-y-8 text-zinc-300 leading-9 text-lg">
+              <div className="space-y-8 text-white leading-9" style={{fontFamily: '"Cormorant Garamond", serif',fontSize:'20px'}}>
                 <p>
                   With over four decades of experience in the music industry,
                   Gopal Sarma is a respected musician, music director,
