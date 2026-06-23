@@ -828,7 +828,7 @@ export default function About() {
                 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-500 mb-2"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
-                Book an Event
+                Book an Concert
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-3">
                 {['+91 94861 22022', '+91 97914 55877', '+91 98404 69489'].map((num, i) => (

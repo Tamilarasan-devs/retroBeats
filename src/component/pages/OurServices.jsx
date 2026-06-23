@@ -8,7 +8,7 @@ import {
   Radio,
   Guitar,
 } from "lucide-react";
-
+import img from '../../assets/attachments/img.png'
 export default function OurServices() {
   const services = [
     {
@@ -31,8 +31,7 @@ export default function OurServices() {
       icon: <Mic2 className="w-7 h-7" />,
       title: "Wedding Orchestra Shows",
       desc: "Luxury live orchestra entertainment for weddings and receptions with romantic melodies, cinematic performances, devotional music, and vibrant celebration energy.",
-      image:
-        "https://kiralartists.com/wp-content/uploads/2025/02/wedding_string_orchestra_stage_design-1-1024x538.jpg",
+      image:[img],
       accent: "from-red-500 via-rose-400 to-red-600",
     },
     {
@@ -56,7 +55,7 @@ export default function OurServices() {
       title: "Celebrity Tribute Concerts",
       desc: "Emotionally powerful tribute concerts dedicated to legendary Indian music composers and singers with live orchestration, vocals, and cinematic stage atmosphere.",
       image:
-        "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=2000&auto=format&fit=crop",
+        "https://media.gettyimages.com/id/2059625132/photo/new-delhi-india-crowds-enjoy-the-performance-of-singer-javed-ali-during-a-concert-organized.jpg?s=612x612&w=0&k=20&c=Y8mQqSzxciant02p97mYacNU7BCzywTgfNVv73Dv77w=",
       accent: "from-red-600 via-rose-500 to-red-500",
     },
   ];

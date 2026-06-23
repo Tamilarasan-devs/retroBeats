@@ -90,11 +90,11 @@ export default function Hero() {
         {/* CTA */}
         <div className="mt-8 flex flex-wrap gap-4 justify-center">
           <button className="px-6 sm:px-8 py-3 rounded-full bg-red-600 text-white font-semibold hover:bg-red-500 hover:scale-105 transition duration-300 shadow-[0_0_30px_rgba(220,38,38,0.3)]">
-            Book an Event
+            Book an Concert
           </button>
 
           <button className="px-6 sm:px-8 py-3 rounded-full border border-red-600 text-red-400 bg-white/5 backdrop-blur-md hover:bg-red-600/10 transition duration-300">
-            Explore Shows
+            All Languages Concert
           </button>
         </div>
       </div>
