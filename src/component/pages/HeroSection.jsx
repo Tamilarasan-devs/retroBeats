@@ -56,7 +56,7 @@ export default function HeroSection() {
           className="mt-10 flex flex-wrap gap-4 justify-center"
           style={{ animation: "fadeUp 1s 0.85s both" }}
         >
-          <GoldBtn>Book an Concert</GoldBtn>
+          <GoldBtn>Book a Concert</GoldBtn>
           <GoldBtn outline>Explore Shows</GoldBtn>
         </div>
 
