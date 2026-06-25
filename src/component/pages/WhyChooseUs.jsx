@@ -316,7 +316,7 @@ export default function WhyChooseUs() {
                 className="mt-10 inline-flex items-center gap-4 rounded-xl bg-white px-10 py-5 text-xs font-bold uppercase tracking-[0.25em] text-red-700 shadow-2xl"
                 style={{ fontFamily: "'Outfit', sans-serif" }}
               >
-                Book Your Experience
+                Book Your Concert
 
                 <ArrowRight className="w-5 h-5" />
               </motion.button>

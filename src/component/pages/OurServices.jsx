@@ -251,7 +251,7 @@ export default function OurServices() {
               className="group relative overflow-hidden px-10 py-5 rounded-full bg-gradient-to-r from-red-600 to-rose-600 text-white font-bold text-lg shadow-[0_10px_40px_rgba(220,38,38,0.3)] hover:scale-105 transition-all duration-500"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
-              <span className="relative z-10">Book Your Orchestra</span>
+              <span className="relative z-10">Book Your Concert</span>
 
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
             </button>
