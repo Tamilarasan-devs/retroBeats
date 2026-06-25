@@ -18,7 +18,7 @@ const shows = [
   {
     id: 2, number: "02",
     title: "Retro Beats", subtitle: "Vintage Musical Night", tag: "Retro Live Concert",
-    image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=2000&auto=format&fit=crop",
+    image: "https://media.gettyimages.com/id/2059625132/photo/new-delhi-india-crowds-enjoy-the-performance-of-singer-javed-ali-during-a-concert-organized.jpg?s=612x612&w=0&k=20&c=Y8mQqSzxciant02p97mYacNU7BCzywTgfNVv73Dv77w=",
     accent: "#e11d48", accent2: "#be123c", glow: "rgba(225,29,72,0.15)",
     icon: Disc3,
     desc: "A nostalgic celebration of legendary Tamil melodies, retro synth textures, and timeless cinematic orchestration — crafted to electrify live stages and awaken collective memory.",
