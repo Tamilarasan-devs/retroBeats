@@ -9,6 +9,7 @@ import {
   Guitar,
 } from "lucide-react";
 import img from '../../assets/attachments/img.png'
+import stage from '../../assets/img/stage.jpeg'
 export default function OurServices() {
   const services = [
     {
@@ -54,8 +55,7 @@ export default function OurServices() {
       icon: <Guitar className="w-7 h-7" />,
       title: "Celebrity Tribute Concerts",
       desc: "Emotionally powerful tribute concerts dedicated to legendary Indian music composers and singers with live orchestration, vocals, and cinematic stage atmosphere.",
-      image:
-        "https://media.gettyimages.com/id/2059625132/photo/new-delhi-india-crowds-enjoy-the-performance-of-singer-javed-ali-during-a-concert-organized.jpg?s=612x612&w=0&k=20&c=Y8mQqSzxciant02p97mYacNU7BCzywTgfNVv73Dv77w=",
+      image:[stage],
       accent: "from-red-600 via-rose-500 to-red-500",
     },
   ];
