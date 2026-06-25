@@ -10,6 +10,7 @@ import GalleryImages from '../pages/GalleryImages';
 import ImageUpload from '../pages/ImageUpload';
 import AdminLogin from '../pages/AdminLogin';
 import AdminDashboard from '../pages/AdminDashboard';
+import VideoPage from '../pages/VideoPage';
 
 export default function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export default function AppRoutes() {
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/gallery" element={<GalleryImages />} />
+      <Route path='/video' element={<VideoPage/> } />
       <Route path="/contact" element={<Contact />} />
       <Route path="/beats" element={<RetroBeat />} />
       <Route path="/upload" element={<ImageUpload />} />
