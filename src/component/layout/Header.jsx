@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, User } from 'lucide-react';
+import { Menu, X, User, Users } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../assets/img/logo.jpeg';
 
@@ -7,10 +7,25 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const [active, setActive] = useState(location.pathname);
+  const [visitorCount, setVisitorCount] = useState(null);
 
   useEffect(() => {
     setActive(location.pathname);
   }, [location]);
+
+  useEffect(() => {
+    // Local visitor count starting at 10
+    let currentCount = parseInt(localStorage.getItem('retrobest_visitor_count'));
+    
+    if (isNaN(currentCount)) {
+      currentCount = 10; // Start at 10 on first visit
+    } else {
+      currentCount += 1; // Increase on subsequent visits
+    }
+    
+    localStorage.setItem('retrobest_visitor_count', currentCount.toString());
+    setVisitorCount(currentCount);
+  }, []);
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -64,15 +79,25 @@ export default function Header() {
 
         {/* Right Side: Badge, Profile & Mobile Button */}
         <div className="flex-1 flex items-center justify-end gap-4">
-          <div className="hidden lg:flex flex-col items-end gap-1 flex-shrink-0">
-            <div className="flex items-center gap-1.5 px-3 py-1.5 border border-red-900/50 bg-red-950/20 rounded-lg shadow-sm">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1" className="text-red-500" />
-                <circle cx="7" cy="7" r="2.5" fill="currentColor" className="text-red-500" />
-              </svg>
-              <span className="text-[10px] font-bold tracking-widest uppercase text-red-500">
-                In association with FCMA
-              </span>
+          <div className="hidden lg:flex flex-col items-end gap-2 flex-shrink-0">
+            <div className="flex items-center gap-2">
+              {visitorCount !== null && (
+                <div className="flex items-center gap-1.5 px-3 py-1.5 border border-red-900/50 bg-red-950/20 rounded-lg shadow-sm" title="Total Website Visitors">
+                  <Users size={14} className="text-red-500" />
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-red-500">
+                    {visitorCount.toLocaleString()} Visitors
+                  </span>
+                </div>
+              )}
+              <div className="flex items-center gap-1.5 px-3 py-1.5 border border-red-900/50 bg-red-950/20 rounded-lg shadow-sm">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1" className="text-red-500" />
+                  <circle cx="7" cy="7" r="2.5" fill="currentColor" className="text-red-500" />
+                </svg>
+                <span className="text-[10px] font-bold tracking-widest uppercase text-red-500">
+                  In association with FCMA
+                </span>
+              </div>
             </div>
           </div>
 
@@ -118,26 +143,36 @@ export default function Header() {
             ))}
             <li className="mt-4 pt-4 border-t border-red-900/50">
               <div className="flex flex-col gap-2">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2 px-4 py-2 border border-red-900/50 bg-red-950/20 rounded-lg inline-flex w-fit">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                      <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1" className="text-red-500" />
-                      <circle cx="7" cy="7" r="2.5" fill="currentColor" className="text-red-500" />
-                    </svg>
-                    <span className="text-[10px] font-bold tracking-widest uppercase text-red-500">
-                      In association with FCMA
-                    </span>
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 px-4 py-2 border border-red-900/50 bg-red-950/20 rounded-lg inline-flex w-fit">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1" className="text-red-500" />
+                        <circle cx="7" cy="7" r="2.5" fill="currentColor" className="text-red-500" />
+                      </svg>
+                      <span className="text-[10px] font-bold tracking-widest uppercase text-red-500">
+                        In association with FCMA
+                      </span>
+                    </div>
+                    
+                    {/* Mobile Admin Link */}
+                    <Link 
+                      to="/admin/login"
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-950/40 border border-red-900/50 text-slate-300 text-[10px] font-bold uppercase tracking-widest"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {/* <User size={14} /> */}
+                      Login
+                    </Link>
                   </div>
-                  
-                  {/* Mobile Admin Link */}
-                  <Link 
-                    to="/admin/login"
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-950/40 border border-red-900/50 text-slate-300 text-[10px] font-bold uppercase tracking-widest"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {/* <User size={14} /> */}
-                    Login
-                  </Link>
+                  {visitorCount !== null && (
+                    <div className="flex items-center gap-2 px-4 py-2 border border-red-900/50 bg-red-950/20 rounded-lg inline-flex w-fit mt-1">
+                      <Users size={14} className="text-red-500" />
+                      <span className="text-[10px] font-bold tracking-widest uppercase text-red-500">
+                        {visitorCount.toLocaleString()} Visitors
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <p className="text-[9px] tracking-widest uppercase text-slate-400 font-medium px-1 mt-2">
                   Fellowship of Coimbatore Malayalee Associations
