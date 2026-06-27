@@ -1,9 +1,38 @@
+import React, { useState, useEffect } from 'react';
 import { FaInstagram, FaYoutube, FaFacebookF } from "react-icons/fa";
+import { Eye } from 'lucide-react';
 
 export default function Footer() {
+  const [visitorCount, setVisitorCount] = useState(null);
+
+  useEffect(() => {
+    // Local visitor count starting at 10
+    let currentCount = parseInt(localStorage.getItem('retrobest_visitor_count'));
+    
+    if (isNaN(currentCount)) {
+      currentCount = 10; // Start at 10 on first visit
+    } else {
+      currentCount += 1; // Increase on subsequent visits
+    }
+    
+    localStorage.setItem('retrobest_visitor_count', currentCount.toString());
+    setVisitorCount(currentCount);
+  }, []);
+
   return (
-    <footer className="relative bg-gradient-to-br from-[#4a0505] via-[#3a0404] to-[#240202] text-slate-300 pt-24 pb-12 px-6 md:px-16 overflow-hidden border-t border-red-900/30">
-      
+    <>
+      {visitorCount !== null && (
+        <div className="w-full flex items-center justify-center gap-2 py-3 opacity-80 hover:opacity-100 transition-opacity duration-300">
+          <Eye size={16} className="text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]" />
+          <span 
+            className="text-sm font-medium tracking-[0.2em] text-slate-300"
+            style={{ fontFamily: "'Inter', sans-serif" }}
+          >
+            {visitorCount.toLocaleString()}
+          </span>
+        </div>
+      )}
+      <footer className="relative bg-gradient-to-br from-[#4a0505] via-[#3a0404] to-[#240202] text-slate-300 pt-24 pb-12 px-6 md:px-16 overflow-hidden border-t border-red-900/30">
       {/* Texture Overlay */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")" }} />
 
@@ -106,11 +135,11 @@ export default function Footer() {
       {/* Footer Bottom */}
       <div className="relative mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-sm font-bold tracking-widest uppercase">
         <p>© {new Date().getFullYear()} Retro Beats Orchestra. All rights reserved.</p>
-        <p className="italic text-red-900/40">In association with FCMA, Coimbatore</p>
       </div>
 
       {/* Decorative Glow Orb */}
       <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-red-600/10 blur-[100px] rounded-full pointer-events-none" />
     </footer>
+    </>
   );
 }

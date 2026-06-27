@@ -743,7 +743,6 @@ function Footer() {
           gap: 12,
         }}>
           <p style={{ fontSize: 13, color: "#94a3b8" }}>© 2025 Orchestra Brand. All rights reserved.</p>
-          <p style={{ fontSize: 13, color: "#94a3b8" }}>In association with FCMA, Coimbatore</p>
         </div>
       </div>
     </footer>
