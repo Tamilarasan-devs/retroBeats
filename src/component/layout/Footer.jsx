@@ -28,7 +28,7 @@ export default function Footer() {
             className="text-sm font-medium tracking-[0.2em] text-slate-300"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            {visitorCount.toLocaleString()}(views)
+            {visitorCount.toLocaleString()}(Views)
           </span>
         </div>
       )}
