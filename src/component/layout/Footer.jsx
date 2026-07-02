@@ -1,34 +1,50 @@
 import React, { useState, useEffect } from 'react';
 import { FaInstagram, FaYoutube, FaFacebookF } from "react-icons/fa";
-import { Eye } from 'lucide-react';
+import { db } from '../../firebase';
+import { ref, onValue, push, onDisconnect, remove, set } from 'firebase/database';
 
 export default function Footer() {
   const [visitorCount, setVisitorCount] = useState(null);
 
   useEffect(() => {
-    // Local visitor count starting at 10
-    let currentCount = parseInt(localStorage.getItem('retrobest_visitor_count'));
-    
-    if (isNaN(currentCount)) {
-      currentCount = 10; // Start at 10 on first visit
-    } else {
-      currentCount += 1; // Increase on subsequent visits
-    }
-    
-    localStorage.setItem('retrobest_visitor_count', currentCount.toString());
-    setVisitorCount(currentCount);
+    // Firebase Realtime Database presence tracking
+    // Each visitor pushes a unique entry to /active_users
+    // onDisconnect automatically removes it when they leave
+    const activeUsersRef = ref(db, 'active_users');
+    const myConnectionRef = push(activeUsersRef);
+
+    // Remove this user's entry when they disconnect (close tab / navigate away)
+    onDisconnect(myConnectionRef).remove();
+
+    // Add this visitor to the active_users list
+    set(myConnectionRef, true);
+
+    // Listen for changes to the active_users count in real time
+    const unsubscribe = onValue(activeUsersRef, (snapshot) => {
+      const count = snapshot.exists() ? snapshot.size : 0;
+      setVisitorCount(count);
+    });
+
+    // Cleanup: remove connection entry and stop listening when component unmounts
+    return () => {
+      remove(myConnectionRef);
+      unsubscribe();
+    };
   }, []);
 
   return (
     <>
       {visitorCount !== null && (
         <div className="w-full flex items-center justify-center gap-2 py-3 opacity-80 hover:opacity-100 transition-opacity duration-300">
-          <Eye size={16} className="text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]" />
+          <div className="relative flex h-3 w-3 items-center justify-center">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+          </div>
           <span 
-            className="text-sm font-medium tracking-[0.2em] text-slate-300"
+            className="text-sm font-medium tracking-[0.2em] text-slate-300 transition-all duration-300"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            {visitorCount.toLocaleString()}(Views)
+            {visitorCount.toLocaleString()}  Views
           </span>
         </div>
       )}
