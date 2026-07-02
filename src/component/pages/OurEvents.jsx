@@ -431,7 +431,7 @@ function ClosingQuote() {
         </div>
         {/* Stats */}
         <div className="w-full lg:w-56 xl:w-60 flex-shrink-0 flex flex-row lg:flex-col justify-around lg:justify-center gap-5 px-7 py-10 lg:py-14" style={{ background: "rgba(220,38,38,0.05)", borderLeft: "1px solid rgba(220,38,38,0.15)" }}>
-          {[["12+", "Years of Live Music"], ["200+", "Premium Shows"], ["50K+", "Audience Reached"]].map(([val, label], i) => (
+          {[["24+", "Years of Live Music"], ["200+", "Premium Shows"], ["50K+", "Audience Reached"]].map(([val, label], i) => (
             <motion.div key={i} className="text-center lg:text-left" initial={{ opacity: 0, x: 18 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 + i * 0.1, duration: 0.55 }}>
               <div className="text-3xl xl:text-4xl font-black" style={{ fontFamily: "'Cormorant Garamond',serif", color: "#dc2626" }}>{val}</div>
               <div className="text-[8.5px] font-bold uppercase tracking-widest text-slate-100 mt-0.5" style={{ fontFamily: " DM Mono ,monospace" }}>{label}</div>

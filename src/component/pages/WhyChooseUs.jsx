@@ -230,25 +230,21 @@ export default function WhyChooseUs() {
             <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
               {[
                 {
-                  value: "500+",
-                  label: "Live Performances",
+                  value: "200+",
+                  label: "shows",
                   icon: <Mic2 className="w-6 h-6" />,
                 },
                 {
-                  value: "50K+",
-                  label: "Audience Reached",
+                  value: "2+",
+                  label: "Years",
                   icon: <Users2 className="w-6 h-6" />,
                 },
                 {
-                  value: "100%",
-                  label: "Live Orchestra",
+                  value: "25",
+                  label: "Artist",
                   icon: <Radio className="w-6 h-6" />,
                 },
-                {
-                  value: "5★",
-                  label: "Audience Experience",
-                  icon: <Star className="w-6 h-6" />,
-                },
+                
               ].map((stat, index) => (
                 <div key={index}>
                   <div className="flex justify-center mb-5 text-red-500">

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import bg from '../../assets/img/mus.jpg'
 const STATS = [
   { num: "100+", label: "Performances" },
-  { num: "15+", label: "Artists" },
+  { num: "24+", label: "Artists" },
   { num: "10+", label: "Years" },
 ];
 
